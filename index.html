@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eiffage-Energie-System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="img/logo_ees.png" alt="Logo Eiffage">
+        </div>
+</header>
+    <section id="link-direction">
+       
+        <div class="content">
+            <!-- box -->
+            <figure class="white">
+            <div class="box">
+                <img src="img/background (1).jpg" alt="">
+                <div class="content active ">
+                    <div>
+                        <h4>We Go</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a target=”_blank” href="cadre_de_vie.html" class="watch-more" id="popup-button1">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-part-info">
+                <div id="part-info">Cadre de vie</div>
+            </div> 
+        </figure>
+            <!-- box -->
+            <!-- box -->
+            <figure class="white">
+            <div class="box">
+                <img src="img/salon1.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>FNUM IOT</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a target=”_blank” href=" https://fnumiot.dhl.test.smartseille.info/login">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-part-info">
+                <div id="part-info">FNUM IOT</div>
+            </div>
+        </figure>
+            <!-- box -->
+            <!-- box -->
+            <figure class="white">
+            <div class="box">
+                <img src="img/miami.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Construction</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a target=”_blank” href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-part-info">
+                <div id="part-info">Construction</div>
+            </div>
+        </figure>
+        <figure class="white">
+            <div class="box">
+                <img src="img/miami.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Construction</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a target=”_blank” href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-part-info">
+                <div id="part-info">Construction</div>
+            </div>
+        </figure>
+        <figure class="white">
+            <div class="box">
+                <img src="img/miami.jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Construction</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a target=”_blank” href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-part-info">
+                <div id="part-info">Construction</div>
+            </div>
+        </figure>
+      
+       
+            <!-- box -->
+             <!-- box -->
+             <figure class="white">
+             <div class="box">
+                <img src="img/salon4 (1).png" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Cybersecurite</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a target=”_blank” href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-part-info">
+                <div id="part-info">Cybersecurite</div>
+            </div>
+        </figure>
+    
+             <figure class="white">
+             <div class="box">
+                <img src="img/salon2 (1).jpg" alt="">
+                <div class="content">
+                    <div>
+                        <h4>Reseau</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <a target=”_blank” href="#">Lire Plus</a>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-part-info">
+                <div id="part-info">Reseau</div>
+            </div>
+        </figure>
+        <figure class="white" style="position: relative;">
+            <div class="box" id="pdfBox" style="position: relative;">
+                
+                <img src="img/los-angeles.jpg" alt="">
+                
+                <div class="content">
+                    <div>
+                        <h4>Titre</h4>
+                        <p>Description du PDF.</p>
+                        <p>Plus d'informations...</p>
+                        <button id="openPdfButton">Lire Plus</button>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper-part-info">
+                <div id="part-info">pdf avec fenetre modal</div>
+            </div> 
+        </figure>
+
+    
+    </section>
+    
+   </body>  
+    </html>
+	
+<script>
+
+//pdf avec fenetre modale
+    var openPdfButton = document.getElementById("openPdfButton");
+    var pdfModal = document.getElementById("pdfModal");
+    var pdfIframe = document.getElementById("pdfIframe");
+    var closeButton = document.getElementsByClassName("close")[0];
+
+    // Ouvrir la fenêtre modale lorsque le bouton est cliqué
+    openPdfButton.addEventListener("click", function() {
+        pdfModal.style.display = "block"; 
+    });
+
+    // Fermer la fenêtre modale lorsque l'utilisateur clique sur le bouton de fermeture
+    closeButton.addEventListener("click", function() {
+        pdfModal.style.display = "none"; // Masquer la fenêtre modale
+        pdfIframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    });
+
+    // Fermer la fenêtre modale lorsque l'utilisateur clique en dehors de celle-ci
+    window.addEventListener("click", function(event) {
+        if (event.target == pdfModal) {
+            pdfModal.style.display = "none"; 
+            pdfIframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        }
+    });
+
+</script>

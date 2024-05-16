@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eiffage-Energie-System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container2">
+    <header>
+        <div class="logo">
+          <img src="img/logo_ees.png" alt="Logo Eiffage">
+        </div>
+        <div class="logo">
+            <Strong> Cadre de vie</Strong>
+          </div>
+</header>
+
+<section id="button-section">
+    <a href="index.html" class="Home_button"><i class="fas fa-home"></i> </a>
+    <button class="button" onclick="openVideo('https://cdn.pixabay.com/video/2024/03/01/202587-918431513_large.mp4')">Film 1</button>
+    <button class="button" onclick="openVideo('https://cdn.pixabay.com/video/2021/12/30/102959-661305174_large.mp4')">Film 2</button>
+    <button class="button" onclick="openVideo('https://cdn.pixabay.com/video/2023/10/12/184734-873923034_large.mp4')">Film 3</button>
+    <button class="button">Film 4</button>
+    <button class="button">Film 5</button>
+    <button class="button">Film 6</button>
+</section>
+<section class="large-box">
+    <div id="videoContainer">
+        <video id="myVideo" width="100%" height="100%" controls autoplay muted>
+            <source id="videoSource" src="" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos au format MP4.
+        </video>
+    </div>
+</section>
+</div>
+</body> 
+</html>
+<script>
+  function openVideo(videoUrl) {
+    var videoSource = document.getElementById('videoSource');
+    var myVideo = document.getElementById('myVideo');
+    
+    
+    myVideo.pause();
+    myVideo.currentTime = 0;
+   
+    videoSource.src = videoUrl;
+    myVideo.load();
+    myVideo.play();
+}
+
+</script>
