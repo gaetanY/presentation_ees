@@ -320,3 +320,72 @@ header .logo:nth-child(2) {
         
     } 
 }
+
+
+@media screen and (max-width: 16in) {
+    
+    header {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        padding: 0 2%;
+        
+    }
+
+    header .logo img {
+        width: 120px; 
+        height: auto;
+    
+    }
+    #link-direction {
+        padding: 0 0 ;
+        margin-bottom: 10px;
+        margin: 10px auto 10px auto;
+       padding-left: 200px;
+      
+
+    }
+
+    #link-direction .content {
+        
+        grid-template-columns: repeat(4, 270px);
+        gap: 30px;
+       
+
+       
+    }
+    
+    .button {
+      
+      right: 50px;
+      margin-top: 12px; 
+      outline: none; 
+        
+    }
+
+    #button-section {
+        margin-top: 750px; 
+        text-align: center;
+    }
+
+    .Home_button {
+        position: relative;
+        right: -60px;  
+    }
+
+    .large-box {
+        width: 1400px; 
+        height: auto; 
+        
+    }
+    #videoContainer {
+        width: 100%;
+        height: auto;
+        
+    } 
+}
